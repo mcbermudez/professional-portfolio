@@ -48,32 +48,40 @@ header nav ul li a {
 }
 
 /* HERO STYLING*/
-.hero {
+.hero-image {
     height: 400px;
-    width: 100%;
-    margin-bottom: 25px;
     background-image: url("../images/developer-desk.jpg");
     background-size: cover;
     background-position: center;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
     position: relative;
 }
 
 .hero-2 {
-    position: absolute;
+    position:absolute;
     top: 100px;
     left: 30px;
-    border: 3px solid;
+    border: 3px #6A76AC solid;
     height: 200px;
     width: 200px;
 }
 
-.hero-2 h2 {
+.hero-text {
+    position: absolute;
+    top: 300px;
+    right: 30px;
     font-style: italic;
     font-size: 20px;
-    margin-top: 300px;
+    padding: 10px;
     color: #E0DDD9;
     background-color: #6A76AC;
+}
+
+/*ABOUT ME STYLING */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 50px;
+    width: 90px;
+    align-items: center;
 }
