@@ -12,7 +12,7 @@ body {
 /*HEADER STYLING*/
 header {
    padding: 20px 35px;
-   background-color: #6A76AC;
+   background-color: #27282C;
    display: flex;
    justify-content: space-between;
    flex: wrap;
@@ -21,7 +21,7 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: #E0DDD9;
+    color: #9DA3A9;
     margin: 0;
 }
 
@@ -41,8 +41,39 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 20px;
-    color: #E0DDD9;
+    color: #9DA3A9;
     text-decoration: none;
     border-bottom: 2px solid;
     padding-bottom: 2px;
+}
+
+/* HERO STYLING*/
+.hero {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/developer-desk.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.hero-2 {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    border: 3px solid;
+    height: 200px;
+    width: 200px;
+}
+
+.hero-2 h2 {
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 300px;
+    color: #E0DDD9;
+    background-color: #6A76AC;
 }
