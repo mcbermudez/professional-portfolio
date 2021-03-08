@@ -15,7 +15,11 @@ header {
    background-color: #27282C;
    display: flex;
    justify-content: space-between;
-   flex: wrap;
+   flex-wrap: wrap;
+   position: sticky;
+   position: -webkit-sticky;
+   top:0;
+   z-index: 999;
 }
 
 header h1 {
@@ -43,7 +47,7 @@ header nav ul li a {
     font-size: 20px;
     color: #9DA3A9;
     text-decoration: none;
-    border-bottom: 2px solid;
+    border-bottom: 3px solid;
     padding-bottom: 2px;
 }
 
@@ -54,6 +58,7 @@ header nav ul li a {
     background-size: cover;
     background-position: center;
     position: relative;
+    padding: 5px;
 }
 
 .hero-2 {
@@ -68,20 +73,40 @@ header nav ul li a {
 .hero-text {
     position: absolute;
     top: 300px;
-    right: 30px;
+    right: 25px;
     font-style: italic;
     font-size: 20px;
-    padding: 10px;
+    padding: 15px;
     color: #E0DDD9;
     background-color: #6A76AC;
+    border-radius: 15px;
 }
 
 /*ABOUT ME STYLING */
+.flex-row {
+    display: flex;
+    justify-content: left;
+}
 .about {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 50px;
-    width: 90px;
-    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 90%;
+}
+
+.about h3 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    color:#6A76AC;
+    border-right: 3px solid #6A76AC;
+    padding: 10px;
+}
+
+.about p {
+    font-size: 20px;
+    text-align: left;
+    line-height: 1.5;
+    margin-left: 10px;
+    width: 100%;
 }
