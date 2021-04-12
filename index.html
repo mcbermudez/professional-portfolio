@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title> Mara Bermudez - Portfolio</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     
@@ -15,7 +17,7 @@
             </h1>
             
             <nav>
-                <!--Unordered List Elemetn-->
+                <!--Unordered List Element-->
                 <ul>
                     <!--List Item Element-->
                     <li>
@@ -38,34 +40,39 @@
         
         <!--Hero Start-->
         <section class="hero">
+            <div>
+                <h2>
+                    Technical Project Manager
+                </h2>
+            </div>
             <h2>
-                Technical Project Manager
-            </h2>
         </section>
         <!--Hero End-->
 
         <main>
             <!--"About Me" Section Start-->
             <section id="about-me" class="container">
-                <h2 class="container-title">
-                    About <br /> Me
-                </h2>
+                <div class="flex-row">
+                    <h2 class="container-title">
+                        About <br /> Me
+                    </h2>
+                </div>
                 
                 <div class="container-content">
-                    <div class="about-picture"></div>
+                    <div class="about-image"></div>
                     <p>
-                        Hello, my name is Mara and I currently reside in Orlando, FL. I am enrolled in the University of Central Florida's Coding Bootcamp, where I am learning about HTML, CSS, and Javascript concepts. I am an aspiring technical project manager with 8 years of experience in the e-commerce, travel, and technology industries.
-                        I seek to be the trusted conduit between the product teams and clients to overcome blocker, enhance the customer experience and drive innovation.
+                        Hi, my name is Mara and I currently reside in Orlando, FL. I am enrolled in the University of Central Florida’s Coding Bootcamp, where I am learning about HTML, CSS, and Javascript concepts. 
+                        It’s a bit of a leap from creative writing to coding, but I believe where there is risk, there’s an opportunity to learn and grow.
                     </p>
-                    <br />
-                    <br />
+                    <p> </p>
                     <p>
-                        Detail-oriented, proactive, and solutions-driven, I enjoy undertaking challenging and complex projects.
+                        I have 8 years of experience working in e-commerce, travel, and tech (along with a few ventures into technical writing).
+                        No matter what role or industry I find myself in, I strive to be a thoughtful subject matter expert and a trusted customer advocate in order to overcome blockers,
+                        enhance the customer experience and drive innovation.
                     </p>
-                    <br />
-                    <br/>
+                    <p> </p>
                     <p>
-                        In my spare time, I enjoy cooking and reading.
+                        When I am not working or studing, I love reading David Sedaris, trying out new recipes, and daydreaming of eating tacos in Coppenhagen once the pandemic is over.
                     </p>
                 </div>
             </section>
@@ -73,50 +80,66 @@
             
             <!--"My Work" Section Start-->
             <section id="my-work" class="container">
-                <h2 class="container-title">
+                <div>
+                    <h2 class="container-title">
                         My <br/>Work
-                </h2> 
+                    </h2>
+                </div> 
                 
                 <!--Project Grid Starts-->
-                <div class="grid-container">
+                <div class="grid-containter">
                     <div class="grid-layout">
-                        <a href="https://mcbermudez.github.io/run-buddy/" target="_blank" class="project-1 project-image">
-                            <img src="./assets/images/run-buddy-project.jpg" alt="Run Buddy Application" class="capture"/>
-                            <div class="project-description">
-                                <p>Run Buddy</p>
-                                <p>HTML/CSS</p>
-                            </div>
-                        </a>
-                        
-                        <a href="https://mcbermudez.github.io/horiseon-social-solutions/" target="_blank" class="project-2 project-image">
-                            <img src="./assets/images/horiseon-project.jpg" alt="Horiseon Refactor" class="capture"/>
-                            <div class="project-description">
-                                <p>Horiseon Refactor</p>
+                        <a href="https://mcbermudez.github.io/run-buddy/" target="_blank" class="project-1 project image">
+                            <img src="./assets/images/run-buddy-project.jpg" alt="Run Buddy Application" class="snapshot" />
+                            <div class="description">
+                                <h3>Run Buddy</h3>
                                 <p>HTML/CSS</p>
                             </div>
                         </a>
 
-                        <a href="#" class="project-3 project-image">
-                            <img src="./assets/images/Coming-Soon.JPG" alt="Project #3" class="capture"/>
-                            <div class="project-description">
-                                <p>Project #3</p>
+                        <a href="https://mcbermudez.github.io/horiseon-social-solutions/" target="_blank" class="project-2 project image">
+                            <img src="./assets/images/horiseon-project.jpg" alt="Horiseo Refactor" class="snapshot" />
+                            <div class="description">
+                                <h3>Horiseo Refactor</h3>
                                 <p>HTML/CSS</p>
                             </div>
                         </a>
 
-                        <a href="#" class="project-4 project-image">
-                            <img src="./assets/images/Coming-Soon.JPG" alt="Project #4" class="capture"/>
-                            <div class="project-description">
-                                <p>Project #4</p>
-                                <p>HTML/CSS</p>
+                        <a href="http://natallie.github.io./vocab-quiz" target="_blank" class="project-3 project image">
+                            <img src="./assets/images/vocab_mockup.png" alt="Project 3" class="snapshot" />
+                            <div class="description">
+                                <h3>Vocabulary Quiz</h3>
+                                <p>HTML/CSS/JS</p>
                             </div>
                         </a>
 
-                        <a href="#" class="project-5 project-image">
-                            <img src="./assets/images/Coming-Soon.JPG" alt="Project #5" class="capture"/>
-                            <div class="project-description">
-                                <p>Project #5</p>
-                                <p>HTML/CSS</p>
+                        <a href="#" target="_blank" class="project-4 project image">
+                            <img src="./assets/images/Coming-Soon.JPG" alt="Project 4" class="snapshot" />
+                            <div class="description">
+                                <h3>Project 4</h3>
+                                <p>Language</p>
+                            </div>
+                        </a>
+
+                        <a href="#" target="_blank" class="project-5 project image">
+                            <img src="./assets/images/Coming-Soon.JPG" alt="Project 5" class="snapshot" />
+                            <div class="description">
+                                <h3>Project 5</h3>
+                                <p>Language</p>
+                            </div>
+                        </a>
+                        <a href="#" target="_blank" class="project-5 project image">
+                            <img src="./assets/images/Coming-Soon.JPG" alt="Project 6" class="snapshot" />
+                            <div class="description">
+                                <h3>Project 6</h3>
+                                <p>Language</p>
+                            </div>
+                        </a>
+                        <a href="#" target="_blank" class="project-5 project image">
+                            <img src="./assets/images/Coming-Soon.JPG" alt="Project 7" class="snapshot" />
+                            <div class="description">
+                                <h3>Project 7</h3>
+                                <p>Language</p>
                             </div>
                         </a>
                     </div>
@@ -159,5 +182,5 @@
                 </footer>
         </main>
     </body>
-    
+
 </html>

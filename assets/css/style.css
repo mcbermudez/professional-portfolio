@@ -1,6 +1,291 @@
-/*GENERAL STYLING*/
+/*  UNIVERSAL STYLING */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #E2C4A9;
+    --secondary-color: #CCA07B;
+    --tertiary-color: #80DBE9;
+    --quaternary-color: #272825;
+    --font-primary: Libre;
+    --font-secondary: Baskerville;
+}
+
+/* LINK STYLING */
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+/* HEADER STYLING */
+header {
+    padding: 35px 35px 20px 0px;
+    background: var(--quaternary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid var(--quaternary-color);
+    z-index: 999;
+}
+
+header h1 {
+    color: var(--tertiary-color);
+    font-size: 40px;
+    font-variant-caps: small-caps;
+    padding: 5px 50px;
+    font-family: var(--font-primary);
+}
+
+header nav {
+    margin: 15px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 5px;
+}
+
+header nav ul li a {
+    font-size: 25px;
+    font-variant-caps: small-caps;
+    padding: 5px 15px;
+    font-family: var(--tertiary-color);
+}
+
+
+/* HERO STYLING */
+.hero {
+    background-image: url(../images/developer-desk.jpg);
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-bottom: 4px solid var(--quaternary-color);
+}
+
+.hero h2 {
+    font-family: var(--font-primary);
+    background: var(--quaternary-color);
+    color: var(--secondary-color);
+    font-size: 30px;
+    padding: 5px 50px;
+    margin-bottom: 20px;
+    border-radius: 15px 50px;
+}
+
+/* MAIN STYLING */
+main {
+    background-image: url(../images/background2.png);
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container-title {
+    width: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: var(--font-primary);
+    border-right: solid 4px;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.container-content p {
+    width: 100%;
+    margin-left: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: var(--font-secondary);
+}
+
+/* ABOUT ME STYLINGG */
+.about-image {
+    background-image: url(../images/MaraBermudez_Portfolio.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    height: 200px;
+    width: 200px;
+}
+
+/* PROJECT STYLING */
+.grid-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+}
+.grid-layout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+}
+
+.project-1 {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+}
+
+.project-image {
+    border: 4px solid var(--primary-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: var(--tertiary-color);
+}
+
+.snapshot {
+    height: 100%;
+    width: 100%;
+}
+
+
+.description {
+    position:absolute;
+    width: 100px;
+    padding: 10px 15px;
+    margin-bottom: 520px;
+    background: var(--primary-color);
+    border-radius: 0 15px 15px 0;
+    text-align: left;
+    color: var(--secondary-color);
+}
+
+.description h3 {
+    font-size: 14px;
+    font-family: var(--font-primary);
+}
+
+.description p {
+    font-size: 10px;
+    font-family: var(--font-secondary);
+}
+
+/* CONTACT STYLING */
+.contact-info {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    font-family: var(--font-secondary);
+    font-weight: 18px;
+}
+
+.contact-me a {
+    padding: 10px;
+    border-left: 2px solid var(--primary-color);
+    border-right: 2px solid var(--primary-color);
+}
+
+
+/* FOOTER STYLING */
+footer {
+    height: 60px;
+    border-top: 4px solid var(--quaternary-color);
+    background: var(--tertiary-color);
+    text-align: center;
+}
+
+footer div {
+    color: var(--secondary-color);
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    padding-top: 50px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1292px) {
+    .container-content {
+        display: inline;
+    }
+
+    .container-content p {
+        width: 100%;
+    }
+
+    .about-picture {
+        float: left;
+        margin-right: 15px;
+    }
+
+    .contact {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    header  {
+        padding-bottom: 0;
+        position: relative;
+        justify-content: center;
+    }
+    
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .grid-layout {
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(4, 100px);
+    }
+
+    .snapshot {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 0 15px;
+    }
+    .container {
+        display: inline;
+    }
+
+    .container-title {
+        width: 100%;
+        text-align: center;
+        border-right: none;
+        border-bottom: solid rgb(66, 66, 66) 4px;
+        margin: 20px 0;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    .contact {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header nav ul {
+        justify-content: space-around;
+    }
+    
+    header nav ul li a {
+        margin-top: 10px;
+    }
 }
